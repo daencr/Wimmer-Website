@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Fragen an Lugge – Website-Entwurf</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bogen-kopf">
+  <div class="band">
+    <div class="rahmen">
+      <a class="logo klein" href="index.html" aria-label="Zur Startseite">
+        <span class="logo-w" aria-hidden="true">W</span>
+        <span class="logo-text">
+          <span class="logo-name">WIMMER</span>
+          <span class="logo-zusatz">Lohn- &amp; Dienstleistungen GbR</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navigation">
+        <a href="website.html">Zurück zum Entwurf</a>
+      </nav>
+    </div>
+  </div>
+  <div class="rahmen titel">
+    <h1>Was ich noch von dir brauche</h1>
+    <p>Beantworte, was du weißt, und lass den Rest leer. Deine Eingaben bleiben auf deinem Handy gespeichert, bis du sie am Ende per WhatsApp an Sebastian schickst.</p>
+  </div>
+</header>
+
+<form class="bogen" id="bogen" novalidate>
+
+  <fieldset class="block" id="eindruck" data-titel="Erster Eindruck">
+    <legend>Erster Eindruck</legend>
+    <div class="frage" data-q="Gefällt dir der Entwurf?">
+      <span class="ftext">Gefällt dir der Entwurf?</span>
+      <div class="wahl">
+        <label><input type="radio" name="gefaellt" value="Ja, passt so">Ja, passt so</label>
+        <label><input type="radio" name="gefaellt" value="Richtung stimmt, aber Änderungen">Richtung stimmt, aber Änderungen</label>
+        <label><input type="radio" name="gefaellt" value="Eher nicht">Eher nicht</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Fenster, Türen und Tore ganz oben?">
+      <span class="ftext">Fenster, Türen und Tore stehen ganz oben, die Landwirtschaft danach. Passt die Reihenfolge?</span>
+      <div class="wahl">
+        <label><input type="radio" name="reihenfolge" value="Ja">Ja</label>
+        <label><input type="radio" name="reihenfolge" value="Nein, Landwirtschaft zuerst">Nein, Landwirtschaft zuerst</label>
+        <label><input type="radio" name="reihenfolge" value="Beides gleich wichtig">Beides gleich wichtig</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Was soll anders werden?">
+      <label for="anders">Was soll anders werden? Was stört dich, was fehlt?</label>
+      <textarea id="anders" name="anders"></textarea>
+    </div>
+  </fieldset>
+
+  <fieldset class="block" id="kontakt" data-titel="Kontakt">
+    <legend>Kontakt</legend>
+    <p>Diese Angaben stehen später öffentlich auf der Seite.</p>
+    <div class="frage" data-q="Telefonnummer für die Website">
+      <label for="tel">Deine Telefonnummer für die Website</label>
+      <input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel">
+    </div>
+    <div class="frage" data-q="WhatsApp über dieselbe Nummer?">
+      <span class="ftext">Sollen dir Kunden über diese Nummer auch per WhatsApp schreiben können?</span>
+      <div class="wahl">
+        <label><input type="radio" name="wa" value="Ja">Ja</label>
+        <label><input type="radio" name="wa" value="Nein, lieber nur anrufen">Nein, lieber nur anrufen</label>
+        <label><input type="radio" name="wa" value="Andere Nummer für WhatsApp">Andere Nummer</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Nummer von Chris (Siloschlauchpressen)">
+      <label for="telchris">Nummer von Chris für die Siloschlauchpressen</label>
+      <input type="tel" id="telchris" name="telchris" inputmode="tel">
+    </div>
+    <div class="frage" data-q="E-Mail für die Website">
+      <label for="mail">E-Mail-Adresse für die Website</label>
+      <input type="email" id="mail" name="mail" autocomplete="email" inputmode="email">
+    </div>
+    <div class="frage" data-q="Anschrift der Firma">
+      <label for="adresse">Anschrift der Firma</label>
+      <input type="text" id="adresse" name="adresse" autocomplete="street-address">
+    </div>
+    <div class="frage" data-q="Einzugsgebiet">
+      <label for="gebiet">Wie weit fährst du für Aufträge?<span class="hilfe">Zum Beispiel „bis 50 km“ oder die Landkreise, in denen du unterwegs bist.</span></label>
+      <input type="text" id="gebiet" name="gebiet">
+    </div>
+  </fieldset>
+
+  <fieldset class="block" id="fenster" data-titel="Fenster, Türen, Tore">
+    <legend>Fenster, Türen, Tore</legend>
+    <div class="frage" data-q="Fenster: Hersteller">
+      <label for="fhersteller">Von welchen Firmen verkaufst du Fenster?</label>
+      <input type="text" id="fhersteller" name="fhersteller">
+    </div>
+    <div class="frage" data-q="Fenster: Materialien">
+      <span class="ftext">Welche Fenster baust du ein?</span>
+      <div class="wahl">
+        <label><input type="checkbox" name="fmaterial" value="Kunststoff">Kunststoff</label>
+        <label><input type="checkbox" name="fmaterial" value="Holz">Holz</label>
+        <label><input type="checkbox" name="fmaterial" value="Holz-Alu">Holz-Alu</label>
+        <label><input type="checkbox" name="fmaterial" value="Aluminium">Aluminium</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Türen: Arten">
+      <span class="ftext">Welche Türen?</span>
+      <div class="wahl">
+        <label><input type="checkbox" name="tueren" value="Haustüren">Haustüren</label>
+        <label><input type="checkbox" name="tueren" value="Innentüren">Innentüren</label>
+        <label><input type="checkbox" name="tueren" value="Nebeneingangstüren">Nebeneingangstüren</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Türen: Hersteller">
+      <label for="thersteller">Von welchen Firmen sind die Türen?</label>
+      <input type="text" id="thersteller" name="thersteller">
+    </div>
+    <div class="frage" data-q="Tore: Arten">
+      <span class="ftext">Welche Tore baust du ein?</span>
+      <div class="wahl">
+        <label><input type="checkbox" name="tore" value="Garagen-Sektionaltore">Garagen-Sektionaltore</label>
+        <label><input type="checkbox" name="tore" value="Industrie- und Hallentore">Industrie- und Hallentore</label>
+        <label><input type="checkbox" name="tore" value="Rolltore">Rolltore</label>
+        <label><input type="checkbox" name="tore" value="Torantriebe">Torantriebe</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Teckentrup/Hörmann namentlich nennen?">
+      <span class="ftext">Darf ich Teckentrup und Hörmann auf der Seite beim Namen nennen?</span>
+      <div class="wahl">
+        <label><input type="radio" name="marken" value="Ja">Ja</label>
+        <label><input type="radio" name="marken" value="Ja, bin offizieller Partner">Ja, bin offizieller Partner</label>
+        <label><input type="radio" name="marken" value="Lieber nicht">Lieber nicht</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Neubau/Sanierung">
+      <span class="ftext">Was machst du hauptsächlich?</span>
+      <div class="wahl">
+        <label><input type="checkbox" name="bauart" value="Neubau">Neubau</label>
+        <label><input type="checkbox" name="bauart" value="Sanierung und Fenstertausch im Altbau">Sanierung und Fenstertausch im Altbau</label>
+        <label><input type="checkbox" name="bauart" value="Landwirtschaft und Gewerbe">Landwirtschaft und Gewerbe</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Beratung/Aufmaß vor Ort kostenlos?">
+      <span class="ftext">Kommst du zum Beraten und Ausmessen kostenlos vorbei?</span>
+      <div class="wahl">
+        <label><input type="radio" name="aufmass" value="Ja, kostenlos">Ja, kostenlos</label>
+        <label><input type="radio" name="aufmass" value="Kommt drauf an">Kommt drauf an</label>
+        <label><input type="radio" name="aufmass" value="Nicht erwähnen">Lieber nicht erwähnen</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="block" id="leistungen" data-titel="Leistungen">
+    <legend>Leistungen</legend>
+    <p>Die Liste stammt von deiner Visitenkarte.</p>
+    <div class="frage" data-q="Diese Leistungen gibt es noch">
+      <span class="ftext">Tipp an, was du aktuell noch anbietest.</span>
+      <div class="wahl">
+        <label><input type="checkbox" name="leistung" value="Siloschlauchpressen">Siloschlauchpressen</label>
+        <label><input type="checkbox" name="leistung" value="Getreidelagerung im Folienschlauch">Getreidelagerung im Folienschlauch</label>
+        <label><input type="checkbox" name="leistung" value="Pneumatische Förderanlage">Pneumatische Förderanlage</label>
+        <label><input type="checkbox" name="leistung" value="Schroten">Schroten von Getreide und Mais</label>
+        <label><input type="checkbox" name="leistung" value="PV-Solarreinigung">PV-Solarreinigung</label>
+        <label><input type="checkbox" name="leistung" value="Zaunbau">Zaunbau</label>
+        <label><input type="checkbox" name="leistung" value="Baumpflege">Baumpflege</label>
+        <label><input type="checkbox" name="leistung" value="Baumstumpffräsen">Baumstumpffräsen</label>
+        <label><input type="checkbox" name="leistung" value="Montage Türen, Fenster, Tore">Montage Türen, Fenster, Tore</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Fehlende Leistungen">
+      <label for="fehlt">Fehlt etwas, das du anbietest?</label>
+      <textarea id="fehlt" name="fehlt"></textarea>
+    </div>
+    <div class="frage" data-q="Stimmen die Maschinendaten vom Flyer noch?">
+      <span class="ftext">Stimmen die Maschinendaten von deinen Flyern noch (Schlauchgrößen, bis 70 m, bis 400 t pro Stunde)?</span>
+      <div class="wahl">
+        <label><input type="radio" name="daten" value="Ja">Ja</label>
+        <label><input type="radio" name="daten" value="Nein, hat sich geändert">Nein, hat sich geändert</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="block" id="bilder" data-titel="Bilder">
+    <legend>Bilder</legend>
+    <p>Die Fotos im Entwurf sind von deinen Flyern abfotografiert und deshalb unscharf.</p>
+    <div class="frage" data-q="Fotos von Fenstern/Türen/Toren vorhanden?">
+      <span class="ftext">Hast du Fotos von eingebauten Fenstern, Türen oder Toren?</span>
+      <div class="wahl">
+        <label><input type="radio" name="fotos" value="Ja, schicke ich per WhatsApp">Ja, schicke ich per WhatsApp</label>
+        <label><input type="radio" name="fotos" value="Muss ich erst machen">Muss ich erst machen</label>
+        <label><input type="radio" name="fotos" value="Nein">Nein</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Originalfotos der Maschinen und Logo-Datei?">
+      <span class="ftext">Hast du die Originalfotos der Maschinen und dein Logo als Datei?</span>
+      <div class="wahl">
+        <label><input type="radio" name="original" value="Ja, beides">Ja, beides</label>
+        <label><input type="radio" name="original" value="Nur Fotos">Nur Fotos</label>
+        <label><input type="radio" name="original" value="Nur Logo">Nur Logo</label>
+        <label><input type="radio" name="original" value="Nein">Nein</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Foto von dir auf der Seite?">
+      <span class="ftext">Darf ein Foto von dir auf die Seite, am besten bei der Arbeit?</span>
+      <div class="wahl">
+        <label><input type="radio" name="portrait" value="Ja">Ja</label>
+        <label><input type="radio" name="portrait" value="Nein">Nein</label>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="block" id="ueber" data-titel="Über dich">
+    <legend>Über dich</legend>
+    <div class="frage" data-q="Name auf der Website">
+      <label for="name">Welcher Name soll auf der Seite stehen?<span class="hilfe">Vor- und Nachname, so wie Kunden dich ansprechen.</span></label>
+      <input type="text" id="name" name="name" autocomplete="name">
+    </div>
+    <div class="frage" data-q="Abschluss als Schreiner">
+      <span class="ftext">Dein Abschluss als Schreiner</span>
+      <div class="wahl">
+        <label><input type="radio" name="abschluss" value="Geselle">Geselle</label>
+        <label><input type="radio" name="abschluss" value="Meister">Meister</label>
+        <label><input type="radio" name="abschluss" value="Nicht erwähnen">Nicht erwähnen</label>
+      </div>
+    </div>
+    <div class="frage" data-q="Firma gibt es seit">
+      <label for="seit">Seit wann gibt es die Firma?</label>
+      <input type="text" id="seit" name="seit" inputmode="numeric">
+    </div>
+    <div class="frage" data-q="Warum Kunden zu dir kommen">
+      <label for="warum">Warum kommen Kunden zu dir und nicht zu einem anderen? In deinen Worten.</label>
+      <textarea id="warum" name="warum"></textarea>
+    </div>
+  </fieldset>
+
+  <fieldset class="block" id="rechtliches" data-titel="Impressum und Adresse der Seite">
+    <legend>Impressum und Adresse der Seite</legend>
+    <p>Eine Firmenseite braucht in Deutschland ein Impressum.</p>
+    <div class="frage" data-q="Gesellschafter der GbR">
+      <label for="gesellschafter">Wer sind die Gesellschafter der GbR?<span class="hilfe">Vor- und Nachnamen.</span></label>
+      <input type="text" id="gesellschafter" name="gesellschafter">
+    </div>
+    <div class="frage" data-q="USt-IdNr.">
+      <label for="ust">Umsatzsteuer-ID, falls vorhanden<span class="hilfe">Beginnt mit DE. Die normale Steuernummer muss nicht auf die Seite.</span></label>
+      <input type="text" id="ust" name="ust">
+    </div>
+    <div class="frage" data-q="Wunsch-Adresse der Website">
+      <label for="domain">Hast du schon eine Internetadresse oder einen Wunsch dafür?<span class="hilfe">Zum Beispiel wimmer-dienstleistungen.de. Eine eigene Adresse kostet meist 5 bis 20 € im Jahr.</span></label>
+      <input type="text" id="domain" name="domain">
+    </div>
+    <div class="frage" data-q="Sonstiges">
+      <label for="sonst">Sonst noch was?</label>
+      <textarea id="sonst" name="sonst"></textarea>
+    </div>
+  </fieldset>
+
+  <div class="abschicken">
+    <h2>Antworten abschicken</h2>
+    <p>Der Knopf öffnet WhatsApp mit deinen Antworten als fertige Nachricht. Dort nur noch auf Senden tippen. Fotos schickst du danach einfach im selben Chat hinterher.</p>
+    <div class="knopfreihe">
+      <button type="button" class="knopf gross" id="senden">Antworten per WhatsApp schicken</button>
+      <button type="button" class="knopf hohl" id="kopieren">Antworten kopieren</button>
+    </div>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+    <details class="vorschau">
+      <summary>Nachricht vorher ansehen</summary>
+      <pre id="vorschau"></pre>
+    </details>
+  </div>
+
+</form>
+
+<script>
+/* ============================================================
+   SEBASTIAN: Hier deine WhatsApp-Nummer eintragen, dann landet
+   die Nachricht direkt bei dir. Format ohne + und ohne führende 0,
+   z. B. 0151 2345678 -> "491512345678".
+   Bleibt das Feld leer, wählt Lugge den Empfänger selbst in WhatsApp aus.
+   ============================================================ */
+const EMPFAENGER_WHATSAPP = "";
+
+const SPEICHER = "wimmer-fragen-v1";
+const form = document.getElementById("bogen");
+const statusEl = document.getElementById("status");
+const vorschau = document.getElementById("vorschau");
+
+function antwortVon(frage) {
+  const haken = [...frage.querySelectorAll("input[type=radio]:checked, input[type=checkbox]:checked")].map(i => i.value);
+  if (haken.length) return haken.join(", ");
+  const feld = frage.querySelector("input[type=text], input[type=tel], input[type=email], textarea");
+  return feld ? feld.value.trim() : "";
+}
+
+function nachricht() {
+  const teile = [];
+  form.querySelectorAll("fieldset.block").forEach(block => {
+    const zeilen = [];
+    block.querySelectorAll(".frage").forEach(f => {
+      const a = antwortVon(f);
+      if (a) zeilen.push(f.dataset.q + (f.dataset.q.endsWith("?") ? " " : ": ") + a);
+    });
+    if (zeilen.length) teile.push("*" + block.dataset.titel + "*\n" + zeilen.join("\n"));
+  });
+  if (!teile.length) return "";
+  return "Rückmeldung zum Website-Entwurf\n\n" + teile.join("\n\n");
+}
+
+function speichern() {
+  const daten = {};
+  form.querySelectorAll("input, textarea").forEach(el => {
+    if (el.type === "radio") { if (el.checked) daten[el.name] = el.value; }
+    else if (el.type === "checkbox") { (daten[el.name] = daten[el.name] || []); if (el.checked) daten[el.name].push(el.value); }
+    else daten[el.name] = el.value;
+  });
+  try { localStorage.setItem(SPEICHER, JSON.stringify(daten)); } catch (e) { /* Speichern nicht möglich – Formular funktioniert trotzdem */ }
+}
+
+function laden() {
+  let daten = null;
+  try { daten = JSON.parse(localStorage.getItem(SPEICHER) || "null"); } catch (e) { daten = null; }
+  if (!daten) return;
+  form.querySelectorAll("input, textarea").forEach(el => {
+    const w = daten[el.name];
+    if (w === undefined) return;
+    if (el.type === "radio") el.checked = (w === el.value);
+    else if (el.type === "checkbox") el.checked = Array.isArray(w) && w.includes(el.value);
+    else el.value = w;
+  });
+}
+
+function aktualisieren() {
+  vorschau.textContent = nachricht() || "Noch nichts ausgefüllt.";
+}
+
+form.addEventListener("input", () => { speichern(); aktualisieren(); statusEl.textContent = ""; });
+form.addEventListener("submit", e => e.preventDefault());
+
+document.getElementById("senden").addEventListener("click", () => {
+  const text = nachricht();
+  if (!text) { statusEl.textContent = "Noch nichts ausgefüllt. Beantworte mindestens eine Frage."; return; }
+  const ziel = "https://wa.me/" + EMPFAENGER_WHATSAPP + "?text=" + encodeURIComponent(text);
+  window.open(ziel, "_blank", "noopener");
+  statusEl.textContent = EMPFAENGER_WHATSAPP
+    ? "WhatsApp wurde geöffnet. Dort noch auf Senden tippen."
+    : "WhatsApp wurde geöffnet. Wähle dort Sebastian aus und tippe auf Senden.";
+});
+
+document.getElementById("kopieren").addEventListener("click", async () => {
+  const text = nachricht();
+  if (!text) { statusEl.textContent = "Noch nichts ausgefüllt. Beantworte mindestens eine Frage."; return; }
+  try {
+    await navigator.clipboard.writeText(text);
+    statusEl.textContent = "Antworten kopiert. Füge sie in eine Nachricht an Sebastian ein.";
+  } catch (e) {
+    document.querySelector(".vorschau").open = true;
+    statusEl.textContent = "Kopieren ging nicht. Markiere den Text unten und kopiere ihn von Hand.";
+  }
+});
+
+laden();
+aktualisieren();
+</script>
+</body>
+</html>
