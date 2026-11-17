@@ -12,7 +12,6 @@ Entwurf, noch nicht für die Öffentlichkeit (alle Seiten stehen auf `noindex`).
 
 ## Was noch einzutragen ist
 
-- `fragen.html`, ganz unten: `EMPFAENGER_WHATSAPP` – Sebastians Nummer, damit die Antworten direkt bei ihm landen.
 - `website.html`, ganz unten: `NUMMERN` – Telefonnummern von Lugge und Chris. Sobald sie eingetragen sind, funktionieren die WhatsApp- und Anruf-Knöpfe und die gelben Hinweise verschwinden.
 
 ## Vor dem Livegang
